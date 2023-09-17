@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('./images/bg.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#logo{
+    background: url('./images/logo.PNG') no-repeat center center/cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+nav{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+.navList{
+    margin: 0px 20px;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+#title h1{
+    color: white;
+    margin: 20px 30px;
+    font-style: oblique;
+}
+.songsList{
+    width: 468px;
+    height: 379px;
+    overflow: scroll;
+}
+.songsItem > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.songsItem{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    margin: 13px 30px 13px 30px;
+    color: black;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+
+.next{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.stopedBtn{
+  background: url('./images/stopplaybutton.png') no-repeat center center/cover;
+}
+.playedBtn{
+  background: url('./images/circleplaybutton.png') no-repeat center center/cover;
+}
+.playButtons img{
+    filter: invert();
+}
+.playButtons {
+    text-align: center;
+}
+.playButtons img{
+    cursor: pointer;
+}
+.leftPlayBtn{
+    transform: rotate(180deg);
+}
+.bottom input{
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.gif img{
+      width: 30px;
+}
+#gifLogo{
+    opacity: 0;
+    transition: opacity 0.5s ease-in
+}
+.gif{
+    position: absolute;
+    left: 6rem;
+    display: flex;
+    align-items: center;
+}
+#songNam {
+    color: white;
+    position: relative;
+    left: 2rem;
+}
+
